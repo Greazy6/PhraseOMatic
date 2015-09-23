@@ -37,7 +37,11 @@ public class PhraseOMatic {
         
         JOptionPane.showMessageDialog(null, "What we need is " + phrase);
         
-        String phrase2 = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+        int rand11 = (int) (Math.random() * oneLength);
+        int rand22 = (int) (Math.random() * twoLength);
+        int rand33 = (int) (Math.random() * threeLength);
+        
+        String phrase2 = wordListOne[rand11] + " " + wordListTwo[rand22] + " " + wordListThree[rand33];
         
     
         
