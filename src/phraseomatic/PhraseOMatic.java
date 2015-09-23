@@ -37,11 +37,11 @@ public class PhraseOMatic {
         
         JOptionPane.showMessageDialog(null, "What we need is " + phrase);
         
-        System.out.println("What we need is " + phrase);
+        String phrase2 = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
         
+    
         
-        
-        JOptionPane.showMessageDialog(null, "Wow that was amazing and here is some more " + phrase);
+        JOptionPane.showMessageDialog(null, "Wow that was amazing and here is some more " + phrase2);
     }
     
 }
