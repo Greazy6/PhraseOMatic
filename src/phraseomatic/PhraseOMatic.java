@@ -5,6 +5,7 @@
  */
 package phraseomatic;
 
+import javax.swing.JOptionPane;
 
 public class PhraseOMatic {
 
@@ -12,6 +13,10 @@ public class PhraseOMatic {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String name = JOptionPane.showInputDialog(null, "Please enter your first and last name");
+        JOptionPane.showMessageDialog(null, "Hello " + name + " Here is some corporate Jargon");
+        
+        
         String[] wordListOne = {
             "24/7", "multi-Tier", "30,000 foot", "B-To-B", "win-win", "front-end", "web-based", "pervasive", "smart", "six-sigma", "critical-path", "dynamic"
         };
@@ -22,7 +27,7 @@ public class PhraseOMatic {
         
         int oneLength = wordListOne.length;
         int twoLength = wordListTwo.length;
-        int threeLength =wordListThree.length;
+        int threeLength = wordListThree.length;
         
         int rand1 = (int) (Math.random() * oneLength);
         int rand2 = (int) (Math.random() * twoLength);
@@ -30,7 +35,13 @@ public class PhraseOMatic {
         
         String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
         
+        JOptionPane.showMessageDialog(null, "What we need is " + phrase);
+        
         System.out.println("What we need is " + phrase);
+        
+        
+        
+        JOptionPane.showMessageDialog(null, "Wow that was amazing and here is some more " + phrase);
     }
     
 }
